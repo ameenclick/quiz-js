@@ -1,0 +1,52 @@
+[
+    {
+        "questine": "Picture1.png",
+        "Options" : {"A" : "2","B": "4" ,"C" : "6" , "D": "8"},
+        "Ans": "D"
+    },
+    {
+        "questine": "Picture2.png",
+        "Options" : {"A" : "Stones","B" : "A hole","C" : "Some more water","D" :"A cover on top"},
+        "Ans": "B"
+    },
+    {
+        "questine": "Picture3.png",
+        "Options" : {"A" : "Reflection","B" : "Fish","C" : "Shell","D" :"Boat"},
+        "Ans": "A"
+    },
+    {
+        "questine": "Picture4.png",
+        "Options" : {"A" : "ICE","B" : "Towel","C" : "Shirt","D" :"Pants"},
+        "Ans": "B"
+    },
+    {
+        "questine": "Picture5.png",
+        "Options" : {"A" : "Ice Cream","B" : "Cake","C" : "Plate","D" :"Water"},
+        "Ans": "C"
+    },
+    {
+        "questine": "Picture6.png",
+        "Options" : {"A" : "Shadow","B" : "Wings","C" : "Reflection","D" :"Tail"},
+        "Ans": "A"
+    },
+    {
+        "questine": "Picture7.png",
+        "Options" : {"A" : "Police Man","B" : "Human","C" : "Ambulance","D" :"Watermelon"},
+        "Ans": "D"
+    },
+    {
+        "questine": "Picture8.png",
+        "Options" : {"A" : "W","B" : "C","C" : "L","D" :"S"},
+        "Ans": "B"
+    },
+    {
+        "questine": "Picture9.jpg",
+        "Options" : {"A" : "Silence","B" : "Shadow","C" : "Goast","D" :"Theaf"},
+        "Ans": "A"
+    },
+    {
+        "questine": "Picture10.png",
+        "Options" : {"A" : "Candle","B" : "Pencil","C" : "Giraf","D" :"Coconut Tree"},
+        "Ans": "A"
+    }
+]
