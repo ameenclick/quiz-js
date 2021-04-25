@@ -3,38 +3,37 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("btn").onclick = function () {
        const email=document.getElementById("exampleInputEmail1").value
        const name=document.getElementById("name").value
-       console.log(name)
-       var quiz=false
        if(name && email)
        {
             localStorage.setItem("User",name)
             localStorage.setItem("Email",email)
             localStorage.setItem("Score",0)
-            console.log(localStorage)
             document.querySelector('.container').innerHTML='<nav aria-label="breadcrumb">'
               +'  <ol class="breadcrumb">'
                 +'  <li class="breadcrumb-item active" aria-current="page"><b>Home</b></li>'
                 +'</ol>'
             +'</nav>'
-            +'<div align="center"><button id="start" class="btn btn-success btn-lg mt-5">Start Quiz</button></div>'
+            +'<div align="center"><button onclick="start()" class="btn btn-success btn-lg mt-5">Start Quiz</button></div>'
        }
        else{
            location.reload()
        }
 
-       document.getElementById("start").onclick = function (){
-        var questineNo=1
-        var request = new XMLHttpRequest();
-        request.open('GET', 'questines.json');
-        request.onload = function(){
-            var data=JSON.parse(request.responseText);
-            next(data,questineNo)
-        }  
-        request.send();
-       }
     }
 });
 
+function start(){
+    console.log("Started")
+    var questineNo=1
+    var request = new XMLHttpRequest();
+    request.onload = function(){
+        var data=JSON.parse(request.responseText);
+        console.log(data)
+        next(data,questineNo)
+    }  
+    request.open('GET', 'https://raw.githubusercontent.com/ameenmsit/quiz-js/main/questines.json', true);
+    request.send();
+}
 
 function next(questinare,questineNo) 
 {
